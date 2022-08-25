@@ -1,17 +1,45 @@
-.menu {
-    display: none
+@media screen and (max-width: 1199px) {
+
 }
 
-.contact {
-    display: none;
+@media screen and (max-width: 767px) {
+    .nav-header {
+        display: none;
+    }
+
+    .contact__phone-number {
+        display: none;
+    }
+    
+    .contact {
+        display: none;
+    }
+    
+    .menu-mobile-open {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+    }
 }
 
-.nav-header {
-    display: none;
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.contact__phone-number {
-    display: none;
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+
+@media screen and (min-width: 758px) {
+    .menu-mobile-open {
+        display: none;
+    }
 }
 
 // .page-header {
