@@ -12,6 +12,7 @@
         visibility: hidden;
         pointer-events: none;
         transition: opacity var(--transition-duration) var(--transition-function), visibility var(--transition-duration) var(--transition-function);
+        
     
         &.is-open {
             opacity: 1;
@@ -73,7 +74,9 @@
         @include font(34px, 500, 40px);
         letter-spacing: 0.02em;
         margin-bottom: 32px;
-    
+    }
+
+    .number {
         color: var(--accent-color);
     }
     
@@ -81,8 +84,10 @@
         @include font(24px, 500, 28px);
         letter-spacing: 0.02em;
         margin-bottom: 64px;
-    
+    }
+    .mail {
         color: #757575;
+
     }
     
     .mobile-menu__social {
@@ -90,7 +95,7 @@
         align-items: center;
     }
     
-    .mobile-menu__social-list {
+    .mobile-menu__social-link {
         @include font(18px, 500, 22px);
         letter-spacing: 0.02em;
     
