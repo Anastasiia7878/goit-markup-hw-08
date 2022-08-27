@@ -1377,6 +1377,7 @@ body {
     border: 1px solid #EEEEEE;
     border-top: none;
     padding: 24px 20px;
+    flex-grow: 1;
   }
   .filter__btn {
     font-size: 16px;
@@ -1442,6 +1443,14 @@ body {
   }
   .work-example__link-wrapper:hover .work-example__overlay, .work-example__link-wrapper:focus .work-example__overlay {
     transform: translate(0, 0);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 48px;
+  }
+  .work-example__item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 .backdrop {
