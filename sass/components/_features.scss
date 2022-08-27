@@ -1,31 +1,79 @@
-.section__container {
-    @extend %align;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+    .section__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        height: 120px;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+    }
+
+    .section__item {
+        margin-bottom: 30px;
+    }
+
+    .pluses-title {
+        @include font(14px, 700, 16px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .plusses-text {
+        @include font(14px, 400, 24px);
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-colour);
+    }
 }
 
-.section__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+
+@media screen and (min-width: 768px) {
+    .section__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 354px;
+        height: 120px;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+    }
+
+    .section__list {
+        display: flex;
+    }
+
+    .section__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .section__item {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 57px;
+    }
+
+    .pluses-title {
+        @include font(14px, 700, 16px);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .plusses-text {
+        @include font(14px, 400, 24px);
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-colour);
+    }
 }
 
-.section__item {
-    flex-basis: calc((100% - 90px) / 4);
-}
+@media screen and (min-width: 1200px) {
+    .section__container {
+        width: 270px;
+    }
 
-.pluses-title {
-    @include font(14px, 700, 16px);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.plusses-text {
-    @include font(14px, 400, 24px);
-    letter-spacing: 0.03em;
-
-    color: var(--secondary-text-colour);
+    .section__item {
+        flex-basis: calc((100% - 90px) / 4);
+        }
 }
