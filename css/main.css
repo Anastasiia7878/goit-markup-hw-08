@@ -1476,7 +1476,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 609px;
     background-color: #FFFFFF;
     padding: 40px;
