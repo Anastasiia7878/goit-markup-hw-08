@@ -104,7 +104,6 @@
         letter-spacing: 0.02em;
         color: var(--secondary-text-colour);
         transition: color var(--transition-duration) var(--transition-function);
-        margin-bottom: 10px;
 
         &:hover,
         &:focus {
@@ -112,6 +111,10 @@
         }
     }
     
+    .contact__mail {
+        margin-bottom: 10px;
+    }
+
     .contact__icon {
         fill: currentColor;
         margin-right: 8px;
@@ -131,7 +134,7 @@
             background-color: var(--accent-color);
             border-radius: 2px;
             transition: background-color var(--transition-duration) var(--transition-function);
-            bottom: -32px;
+            bottom: -30px;
         }
     }
 }
@@ -167,5 +170,13 @@
 
     .contact__icon {
         margin-right: 10px;
+    }
+
+    .menu__link__current::after {
+        bottom: -32px;
+    }
+
+    .contact__mail {
+        margin-bottom: 0px;
     }
 }

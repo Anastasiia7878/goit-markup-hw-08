@@ -34,10 +34,6 @@
 
     .work-example__item {
         background-color: var(--primary-text-color-theme-dark);
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
     }
 
     .work-example__container {

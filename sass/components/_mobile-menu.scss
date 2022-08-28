@@ -42,6 +42,9 @@
         padding-left: 25px;
         padding-top: 48px;
         padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
     
     .mobile-menu__nav-link {
@@ -66,10 +69,10 @@
         margin-bottom: 35px;
     }
     
-    .mobile-menu__nav {
-        margin-bottom: 302px;
+    .mobile-menu__contact {
+        margin-top: auto;
     }
-    
+
     .mobile-menu__contact-number {
         @include font(34px, 500, 40px);
         letter-spacing: 0.02em;
